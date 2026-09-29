@@ -1,0 +1,144 @@
+* {
+    font-family: "Maple Mono NF";
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #e8dcc4;
+}
+
+/* -------------------------
+   Workspace section
+   ------------------------- */
+
+#workspaces {
+    background: rgba(18, 13, 13, 0.92);
+    border: 1px solid rgba(104, 207, 220, 0.55);
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+#workspaces button {
+    color: #776b65;
+    background: transparent;
+    border: none;
+    border-radius: 7px;
+
+    padding: 0 9px;
+    margin: 0 1px;
+
+    transition:
+        color 150ms ease,
+        background 150ms ease;
+}
+
+#workspaces button:hover {
+    color: #d8cbb3;
+    background: rgba(104, 207, 220, 0.08);
+}
+
+#workspaces button.active {
+    color: #69d2df;
+    background: rgba(104, 207, 220, 0.13);
+}
+
+#workspaces button.urgent {
+    color: #e59b72;
+}
+
+/* -------------------------
+   Center clock
+   ------------------------- */
+
+#clock {
+    color: #e8dcc4;
+
+    background: rgba(18, 13, 13, 0.94);
+    border: 1px solid rgba(104, 207, 220, 0.55);
+    border-radius: 10px;
+
+    padding: 3px 18px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* -------------------------
+   Right modules
+   ------------------------- */
+
+#network,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#tray {
+    background: rgba(18, 13, 13, 0.92);
+    color: #d8cbb3;
+
+    padding: 3px 11px;
+
+    border-top: 1px solid rgba(104, 207, 220, 0.18);
+    border-bottom: 1px solid rgba(104, 207, 220, 0.18);
+}
+
+#network {
+    border-left: 1px solid rgba(104, 207, 220, 0.55);
+    border-radius: 10px 0 0 10px;
+    padding-left: 13px;
+}
+
+#tray {
+    border-right: 1px solid rgba(104, 207, 220, 0.55);
+    border-radius: 0 10px 10px 0;
+    padding-right: 13px;
+}
+
+/* -------------------------
+   Accent colors
+   ------------------------- */
+
+#network {
+    color: #76c7d3;
+}
+
+#cpu {
+    color: #d8c19a;
+}
+
+#memory {
+    color: #c9b8a0;
+}
+
+#temperature {
+    color: #d9a27f;
+}
+
+#temperature.critical {
+    color: #e87878;
+}
+
+#pulseaudio {
+    color: #aebfd0;
+}
+
+#pulseaudio.muted {
+    color: #746c68;
+}
+
+/* -------------------------
+   Tooltips
+   ------------------------- */
+
+tooltip {
+    background: rgba(18, 13, 13, 0.98);
+    border: 1px solid rgba(104, 207, 220, 0.55);
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: #e8dcc4;
+}
